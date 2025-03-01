@@ -19,7 +19,7 @@ const Hero = () => {
       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} className="w-full flex justify-center items-center">
       <img src="/assets/icons/wow.svg" className="md:w-3/5 z-50" alt="" /></FadeContent>
       
-      <span className="font-bold googleTextGrad md:text-6xl">KERALA</span>
+      <span className="font-bold googleTextGrad text-5xl md:text-6xl">KERALA</span>
       
 
       <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center">
