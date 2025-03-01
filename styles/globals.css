@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.5rem;
+    --google-red: #db4437;
+    --google-blue: #4285f4;
+    --google-yellow: #f4b400;
+    --google-green: #0f9d58;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  background-color: #151719;
+  color: white;
+  margin: 0;
+}
+
+.gradColor {
+  background: linear-gradient(
+    90deg,
+    var(--google-blue) 0%,
+    var(--google-green) 30.42%,
+    var(--google-yellow) 64.21%,
+    var(--google-red) 100%
+  );
+  transition: background 0.5s ease, border 0.5s ease;
+}
+
+/* .gradColor:hover {
+  background: linear-gradient(to left, 
+  var(--google-green) 0%, 
+  var(--google-blue) 25%, 
+  var(--google-red) 50%, 
+  var(--google-yellow) 100%);
+} */
+
+.gradImgR {
+  mask-image: linear-gradient(to right, transparent, #151719);
+}
+.gradImgL {
+  mask-image: linear-gradient(to right, transparent, #151719);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color, var(--google-blue));
+  border-radius: 20px;
+  transition: background 0.5s ease-in-out;
+}
+
+.textGrad {
+  @apply bg-gradient-to-r from-googleGreen via-blue-500 to-googleYellow inline-block text-transparent bg-clip-text;
+}
+.googleTextGrad {
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #3b88df 0.01%,
+    #109c5d 33.66%,
+    #f0b301 61.11%,
+    #db4437 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.spinner {
+  -webkit-animation: spin 8s linear infinite;
+  -moz-animation: spin 8s linear infinite;
+  animation: spin 8s linear infinite;
+}
+.spinner-ay {
+  -webkit-animation: axialrotationY 8s linear infinite;
+  -moz-animation: axialrotationY 8s linear infinite;
+  animation: axialrotationY 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@-moz-keyframes axialrotationY {
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
+@font-face {
+  font-family: "GoogleFont";
+  src: url("/assets/font/googleFont/ProductSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.googleFont {
+  font-family: "GoogleFont";
+}
+@font-face {
+  font-family: "GoogleFontBlack";
+  src: url("/assets/font/googleFont/ProductSans-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.googleFontB {
+  font-family: "GoogleFontBlack";
+}
