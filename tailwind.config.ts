@@ -24,7 +24,7 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        bgColor : "#151719",
+        bgColor : "#000000",
         googleRed:"#DB4437",
         googleBlue:"#4285F4",
         googleGreen:"#0F9D58",

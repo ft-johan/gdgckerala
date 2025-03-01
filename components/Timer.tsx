@@ -19,7 +19,7 @@ export default function Timer() {
     }, 1000)
   }, [second])
   return (
-    <div className="flex bg-bgColor flex-col md:flex-row justify-center items-center gap-3 m-5 p-16 md:py-32  text-center">
+    <div className="flex bg-black flex-col md:flex-row justify-center items-center gap-3 m-5 p-16 md:py-32  text-center">
       <Card className="bg-bgColor">
         <CardContent>
           <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{day < 10 ? '0' + day : day}</h1>
