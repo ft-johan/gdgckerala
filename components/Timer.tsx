@@ -19,8 +19,11 @@ export default function Timer() {
     }, 1000)
   }, [second])
   return (
-    <div className="flex bg-black flex-col md:flex-row justify-center items-center gap-3 m-5 p-16 md:py-32  text-center">
-      <Card className="bg-bgColor">
+    <div className=" min-h-screen md:min-h-screen gap-3 m-1 p-2">
+      <h1 className="text-white font-bold text-5xl text-center lg:text-6xl flex flex-col flex-wrap justify-center items-center">
+        Time is ticking⏱️ </h1>
+      <div className="flex flex-row justify-center items-start text-center gap-3 m-5 p-12 md:p-16">
+      <Card className="bg-bgColor p-16">
         <CardContent>
           <h1 className="text-slate-300 font-bold md:text-7xl text-5xl">{day < 10 ? '0' + day : day}</h1>
           <p>days</p>
@@ -44,6 +47,9 @@ export default function Timer() {
           <p>secs</p>
         </CardContent>
       </Card>
+      </div>
+      <p className="text-center md:px-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quisquam tenetur maxime perspiciatis eveniet dolorum corrupti corporis nisi quod. Alias unde cum est distinctio perspiciatis? Id, eveniet at, optio ipsam quidem iste modi error porro vero iusto cupiditate reiciendis neque. Officiis modi a fuga mollitia nobis eaque corporis perferendis repellendus! Rerum nisi saepe quaerat! Quisquam, distinctio. Dolorum voluptatum illum dolores eius alias, suscipit quisquam amet delectus cumque magnam enim, consequuntur, fuga obcaecati animi nihil nisi ullam aspernatur facilis omnis minus. Aperiam explicabo dolorem cum distinctio dolores, eaque dolorum ipsam cupiditate est? Ab magni voluptatem dolores impedit fuga architecto inventore rem!</p>
+
     </div>
   );
 }

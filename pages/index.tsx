@@ -9,7 +9,10 @@ import TimeLine from "@/components/LandingPage/TimeLine";
 import { useEffect } from "react";
 import Venue from "@/components/LandingPage/Venue";
 import Sponsors from "@/components/LandingPage/Sponsors";
+import Marqu from "@/components/LandingPage/about";
+
 import JoinUs from "@/components/LandingPage/JoinUs";
+import MarQu from "@/components/LandingPage/about";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -37,6 +40,7 @@ export default function Home() {
       <div className="flex flex-col googleFont">
         <Hero />
         <Timer />
+        <MarQu />
         <Venue />
         <JoinUs/>
         <Sponsors />
