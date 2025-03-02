@@ -5,6 +5,8 @@ import { Button } from "../ui/button";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import Particles from '../ui/particles';
 import FadeContent from '../ui/fadecontent';
+import AnimatedContent from '../ui/animateContent';
+
 
 
 const Hero = () => {
@@ -21,8 +23,17 @@ const Hero = () => {
       <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} className="w-full flex justify-center items-center">
       <span className="font-bold googleTextGrad text-5xl md:text-6xl">KERALA</span></FadeContent>
       
-
-      <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center m-24 md:m-4">
+<AnimatedContent
+  distance={150}
+  direction="vertical"
+  reverse={true}
+  config={{ tension: 80, friction: 35 }}
+  initialOpacity={0.0}
+  animateOpacity
+  scale={1.8}
+  threshold={0.2}
+>
+       <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center m-24 md:m-4">
         <button className="h-16 ease-in-out duration-300 z-20 w-52 bg-[#ea4335] hover:bg-white hover:text-[#ea4335] font-medium text-md md:text-xl rounded-full md:my-8 my-4 mx-12">
           Register Now
         </button>
@@ -30,6 +41,7 @@ const Hero = () => {
           Know more
         </button>
       </div>
+      </AnimatedContent>
     </div>
   );
 };

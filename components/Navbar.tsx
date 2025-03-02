@@ -29,7 +29,7 @@ export default function NavBar() {
         <div className="flex items-center gap-4" onClick={handleHomeClick}>
           {/* Added onClick to the title to trigger handleHomeClick */}
           <img alt="WoW Logo" src={Wow_Circle.src} className="h-10 w-10" />
-          <h1 className="text-[25px] leading-10 googleFont cursor-pointer">
+          <h1 className="text-[25px] leading-10 googleFont cursor-pointer hidden md:block">
             GDGC WoW
           </h1>
         </div>
