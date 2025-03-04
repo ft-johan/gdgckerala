@@ -8,12 +8,10 @@ import {
   ModalFooter,
   ModalTrigger,
 } from "../ui/animated-modal";
-import FadeContent from '../ui/fadecontent';
-import AnimatedContent from '../ui/animateContent';
+import FadeContent from "../ui/fadecontent";
+import AnimatedContent from "../ui/animateContent";
 import { motion } from "framer-motion";
 import { Animatedregister } from "../ui/animatedregister";
-
-
 
 const Hero = () => {
   const images = [
@@ -25,33 +23,36 @@ const Hero = () => {
   ];
   return (
     <div className="relative bg-black flex h-screen w-full flex-col justify-center items-center md:p-5 px-10  mt-28 md:mt-10 overflow-hidden">
-
       {/* Content */}
       <h1 className="text-white font-medium text-2xl text-center lg:text-6xl flex flex-col flex-wrap justify-center items-center">
         Google Developers Group On Campus
       </h1>
+
+      <FadeContent
+        blur={true}
+        duration={1000}
+        easing="ease-out"
+        initialOpacity={0}
+        className="w-full flex justify-center items-center"
+      >
+        <img src="/assets/icons/wow.svg" className="md:w-3/5 z-50" alt="" />
+      </FadeContent>
+      <FadeContent
+        blur={true}
+        duration={1000}
+        easing="ease-out"
+        initialOpacity={0}
+        className="w-full flex justify-center items-center"
+      >
+        <span className="font-bold googleTextGrad text-5xl md:text-6xl">
+          KERALA
+        </span>
+      </FadeContent>
+
      
-      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} className="w-full flex justify-center items-center">
-      <img src="/assets/icons/wow.svg" className="md:w-3/5 z-50" alt="" /></FadeContent>
-      <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0} className="w-full flex justify-center items-center">
-      <span className="font-bold googleTextGrad text-5xl md:text-6xl">KERALA</span></FadeContent>
-      
-<AnimatedContent
-  distance={150}
-  direction="vertical"
-  reverse={true}
-  config={{ tension: 80, friction: 35 }}
-  initialOpacity={0.0}
-  animateOpacity
-  scale={1.8}
-  threshold={0.2}
->
-       <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center m-24 md:m-4">
-       <Animatedregister />
-        
-      </div>
-      </AnimatedContent>
-   
+         <Animatedregister />
+       
+    
     </div>
   );
 };

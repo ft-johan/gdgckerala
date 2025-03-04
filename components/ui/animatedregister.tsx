@@ -19,12 +19,12 @@ export function Animatedregister() {
     "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
-    <div className="  flex items-center justify-center">
+    <div className="py-32 md:py-12 flex items-center justify-center">
        
       <Modal>
         <ModalTrigger className=" text-white h-16 ease-in-out duration-300 z-20 w-52 bg-[#ea4335] hover:bg-white hover:text-[#ea4335] text-md md:text-xl rounded-full  flex justify-center group/modal-btn">
           <span className=" flex justify-center items-center h-full group-hover/modal-btn:translate-x-40 text-center transition duration-500">
-            Register
+            Book your flight
           </span>
           <div className="-translate-x-40 group-hover/modal-btn:translate-x-0 flex items-center justify-center absolute inset-0 transition duration-500 text-black z-20">
           <img src="wow_circle.png" alt="wow" />
