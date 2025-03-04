@@ -13,6 +13,7 @@ import Marqu from "@/components/LandingPage/about";
 
 import JoinUs from "@/components/LandingPage/JoinUs";
 import MarQu from "@/components/LandingPage/about";
+import { Speaker } from "@/components/Speaker/Speakergdgc";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -41,10 +42,10 @@ export default function Home() {
         <Hero />
         <Timer />
         <MarQu />
-        <Venue />
-        <JoinUs/>
+      
+       <Speaker />
         <Sponsors />
-        <TimeLine/>
+        
         <Footer/> 
         {/* <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
           <Timer />

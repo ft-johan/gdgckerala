@@ -10,7 +10,7 @@ const SpeakerPage = () => {
     <div className="flex flex-col overflow-x-hidden">
       <NavBar />
       <div className=" p-10 mt-16">
-      <Speaker/>
+      <Speaker />
       </div>
       <Footer />
     </div>

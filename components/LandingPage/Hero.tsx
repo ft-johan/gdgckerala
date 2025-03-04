@@ -11,7 +11,7 @@ import AnimatedContent from '../ui/animateContent';
 
 const Hero = () => {
   return (
-    <div className="relative bg-black flex h-screen w-full flex-col justify-center items-center md:p-5 px-10 mt-28 md:mt-10 overflow-hidden">
+    <div className="relative bg-black flex h-screen w-full flex-col justify-center items-center md:p-5 px-10  mt-28 md:mt-10 overflow-hidden">
 
       {/* Content */}
       <h1 className="text-white font-medium text-2xl text-center lg:text-6xl flex flex-col flex-wrap justify-center items-center">

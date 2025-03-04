@@ -19,9 +19,9 @@ export default function Timer() {
     }, 1000)
   }, [second])
   return (
-    <div className=" min-h-screen md:min-h-screen gap-3 m-1 p-2">
+    <div className=" min-h-screen md:min-h-screen gap-3 m-8 p-2">
       <h1 className="text-white font-bold text-5xl text-center lg:text-6xl flex flex-col flex-wrap justify-center items-center">
-        Time is ticking⏱️ </h1>
+        Event Starts in⏱️ </h1>
       <div className="flex flex-row justify-center items-start text-center gap-3 m-5 p-12 md:p-16">
       <Card className="bg-bgColor p-16">
         <CardContent>
@@ -48,7 +48,7 @@ export default function Timer() {
         </CardContent>
       </Card>
       </div>
-      <p className="text-center md:px-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quisquam tenetur maxime perspiciatis eveniet dolorum corrupti corporis nisi quod. Alias unde cum est distinctio perspiciatis? Id, eveniet at, optio ipsam quidem iste modi error porro vero iusto cupiditate reiciendis neque. Officiis modi a fuga mollitia nobis eaque corporis perferendis repellendus! Rerum nisi saepe quaerat! Quisquam, distinctio. Dolorum voluptatum illum dolores eius alias, suscipit quisquam amet delectus cumque magnam enim, consequuntur, fuga obcaecati animi nihil nisi ullam aspernatur facilis omnis minus. Aperiam explicabo dolorem cum distinctio dolores, eaque dolorum ipsam cupiditate est? Ab magni voluptatem dolores impedit fuga architecto inventore rem!</p>
+      <p className="text-center m-8 md:px-72">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quisquam tenetur maxime perspiciatis eveniet dolorum corrupti corporis nisi quod. Alias unde cum est distinctio perspiciatis? Id, eveniet at, optio ipsam quidem iste modi error porro vero iusto cupiditate reiciendis neque. Officiis modi a fuga mollitia nobis eaque corporis perferendis repellendus! Rerum nisi saepe quaerat! Quisquam, distinctio. Dolorum voluptatum illum dolores eius alias, suscipit quisquam amet delectus cumque magnam enim, consequuntur, fuga obcaecati animi nihil nisi ullam aspernatur facilis omnis minus. Aperiam explicabo dolorem cum distinctio dolores, eaque dolorum ipsam cupiditate est? Ab magni voluptatem dolores impedit fuga architecto inventore rem!</p>
 
     </div>
   );
