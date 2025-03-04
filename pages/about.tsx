@@ -40,11 +40,11 @@ const AboutPage = () => {
   ]
 
   const testimonials = [
-    { image: "./assets/images/kochi.jpg" },
-    { image: "url_to_image2.jpg" },
-    { image: "url_to_image3.jpg" },
-    { image: "url_to_image4.jpg" },
-    { image: "url_to_image5.jpg" },
+    { image: "./assets/images/kochi.jpg", quote: "Great experience!", name: "John Doe", title: "Developer" },
+    { image: "url_to_image2.jpg", quote: "Loved it!", name: "Jane Smith", title: "Designer" },
+    { image: "url_to_image3.jpg", quote: "Highly recommend.", name: "Alice Johnson", title: "Manager" },
+    { image: "url_to_image4.jpg", quote: "Fantastic!", name: "Bob Brown", title: "Engineer" },
+    { image: "url_to_image5.jpg", quote: "Will come back again.", name: "Charlie Davis", title: "Analyst" },
   ];
   
   return (
