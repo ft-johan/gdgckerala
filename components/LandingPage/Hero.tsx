@@ -1,15 +1,28 @@
 "use client";
 
 import React from "react";
-import { Button } from "../ui/button";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
-import Particles from '../ui/particles';
+import {
+  Modal,
+  ModalBody,
+  ModalContent,
+  ModalFooter,
+  ModalTrigger,
+} from "../ui/animated-modal";
 import FadeContent from '../ui/fadecontent';
 import AnimatedContent from '../ui/animateContent';
+import { motion } from "framer-motion";
+import { Animatedregister } from "../ui/animatedregister";
 
 
 
 const Hero = () => {
+  const images = [
+    "https://images.unsplash.com/photo-1517322048670-4fba75cbbb62?q=80&w=3000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1573790387438-4da905039392?q=80&w=3425&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1555400038-63f5ba517a47?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1554931670-4ebfabf6e7a9?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  ];
   return (
     <div className="relative bg-black flex h-screen w-full flex-col justify-center items-center md:p-5 px-10  mt-28 md:mt-10 overflow-hidden">
 
@@ -34,14 +47,11 @@ const Hero = () => {
   threshold={0.2}
 >
        <div className="w-[50vw] flex flex-col md:flex-row justify-end items-center md:justify-center m-24 md:m-4">
-        <button className="h-16 ease-in-out duration-300 z-20 w-52 bg-[#ea4335] hover:bg-white hover:text-[#ea4335] font-medium text-md md:text-xl rounded-full md:my-8 my-4 mx-12">
-          Register Now
-        </button>
-        <button className="h-16 ease-in-out duration-300 z-20 w-52 bg-[#f9ab00] hover:bg-white hover:text-[#f9ab00] font-medium text-md md:text-xl rounded-full md:my-8 my-4 mx-12">
-          Know more
-        </button>
+       <Animatedregister />
+        
       </div>
       </AnimatedContent>
+   
     </div>
   );
 };
