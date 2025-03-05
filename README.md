@@ -1,6 +1,6 @@
 ## To DO
-background white
-register button - rename & color to green
+Background white
+Register button - rename & color to green
 Register popup - write up sett akk svg image
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
