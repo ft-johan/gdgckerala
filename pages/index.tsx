@@ -41,6 +41,7 @@ export default function Home() {
       <div className="flex flex-col googleFont">
         <Hero />
         <Timer />
+        <Venue />
         <MarQu />
       
        {/*<Speaker />*/}

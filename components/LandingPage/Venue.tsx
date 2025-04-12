@@ -26,10 +26,10 @@ const Venue = () => {
                 }}
                 className="md:text-[220px] text-[100px] py-6 md:py-0 my-4 break-all block googleFontB"
               >
-                KOCHI
+                MITS Kochi
               </div>
               <div className="block  md:text-3xl text-2xl googleFont">
-                ON MARCH <span className="textGrad">28th</span>
+                ON MAY <span className="textGrad">27th</span>
               </div>
             </h1>
           </div>
