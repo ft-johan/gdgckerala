@@ -43,8 +43,8 @@ export default function Home() {
         <Timer />
         <MarQu />
       
-       <Speaker />
-        <Sponsors />
+       {/*<Speaker />*/}
+        {/*<Sponsors />*/}
         
         <Footer/> 
         {/* <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between">
