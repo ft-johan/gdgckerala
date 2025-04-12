@@ -1,40 +1,13 @@
 "use client";
 
 import React from "react";
-import InfiniteMenu from '../ui/infinte-menu';
 
 import FadeContent from "../ui/fadecontent";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import { SiInstagram, SiLinkedin, SiReact, SiX } from "react-icons/si";
-import CircularGallery from '../ui/rolling-gallery';
 
 const Aboutgdsc = () => {
-    const items = [
-        {
-          image: 'https://picsum.photos/300/300?grayscale',
-          link: 'https://google.com/',
-          title: 'Item 1',
-          description: 'This is pretty cool, right?'
-        },
-        {
-          image: 'https://picsum.photos/400/400?grayscale',
-          link: 'https://google.com/',
-          title: 'Item 2',
-          description: 'This is pretty cool, right?'
-        },
-        {
-          image: 'https://picsum.photos/500/500?grayscale',
-          link: 'https://google.com/',
-          title: 'Item 3',
-          description: 'This is pretty cool, right?'
-        },
-        {
-          image: './assets/images/2024/wow1.jpg',
-          link: 'https://google.com/',
-          title: 'Item 4',
-          description: 'This is pretty cool, right?'
-        }
-      ];
+    
       const skills = [
           {
             Icon: SiInstagram,
@@ -89,7 +62,6 @@ const Aboutgdsc = () => {
         networking activities.
       </p></div>
       <div style={{ height: '600px', position: 'relative' }}>
-  <CircularGallery bend={3} textColor="#ffffff" borderRadius={0.05} />
 </div>
     <h2 className="mt-12 text-center font-medium text-2xl">Contact us</h2>
         <div className="max-w-5xl px-auto mx-auto">
