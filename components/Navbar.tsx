@@ -42,13 +42,13 @@ export default function NavBar() {
             About
           </button>
           
-          <button
+          {/*<button
             className="p-10 text-white hover:text-gray-300 transition-colors duration-300"
             onClick={handleSpeakerClick} // Call handleAboutClick when the button is clicked
           >
             speaker
           </button>
-          
+          /*}
           {/* Uncomment this when you want to include the login button */}
           {/* <Button variant={'outline'}>Login</Button> */}
         </div>
